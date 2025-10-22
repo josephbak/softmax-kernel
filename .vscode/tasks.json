@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build and Run CUDA (hello)",
+      "type": "shell",
+      "command": "nvcc hello.cu -o hello && ./hello",
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build and Run: vector_add",
+      "type": "shell",
+      "command": "nvcc -O2 vector_add.cu -o vector_add && ./vector_add",
+      "group": "build",
+      "presentation": { "reveal": "always", "panel": "shared" },
+      "problemMatcher": []
+    }
+  ]
+}
