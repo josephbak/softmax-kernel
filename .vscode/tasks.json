@@ -12,7 +12,8 @@
     {
       "label": "Build and Run: vector_add",
       "type": "shell",
-      "command": "nvcc -O2 vector_add.cu -o vector_add && ./vector_add",
+      // "command": "nvcc -O2 vector_add.cu -o vector_add && ./vector_add",
+      "command" : "nvcc -O2 -arch=sm_89 vector_add.cu -o vector_add && ./vector_add",
       "group": "build",
       "presentation": { "reveal": "always", "panel": "shared" },
       "problemMatcher": []
